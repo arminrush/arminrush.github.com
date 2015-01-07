@@ -1,0 +1,18 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+#envir
+title:            Armin
+header:           'How Come'
+url:              http://arminrush.github.io
+
+# paginate
+paginate:      5
+
+author:
+  name:           'Armin'
+  email:           min4450@outlook.com
