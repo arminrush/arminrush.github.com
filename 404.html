@@ -4,6 +4,14 @@ title: "404: Page not found"
 ---
 
 <div class="page">
-  <h1 class="page-title">404: </h1>
-  <p class="lead">你刚好....和我的文字擦肩而过 <a href="/"> 重新找寻</a> 我的文字 </p>
+  <h1 id="page-title" class="page-title">404: </h1>
+
+  <script>
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "http://www.qq.com/404/search_children.js";
+  var s = document.getElementById("page-title")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </div>
