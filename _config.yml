@@ -16,3 +16,14 @@ paginate:      5
 author:
   name:           'Armin'
   email:           min4450@outlook.com
+
+kramdown:
+  toc_levels:     1..6
+  
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "post" # previously `post` in Jekyll 2.2. now is posts
+    values:
+      layout: "post"
