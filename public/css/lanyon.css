@@ -199,8 +199,8 @@ letter-spacing: -0.01rem;
   position: fixed;
   top: 0;
   bottom: 0;
-  left: -14rem;
-  width: 14rem;
+  left: -17rem;
+  width: 17rem;
   visibility: hidden;
   overflow-y: auto;
   font-family: normal, 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Hiragino Sans GB', 微软雅黑, STKaiti, sans-serif;
@@ -339,11 +339,15 @@ a.sidebar-nav-item:focus {
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(14rem);
-      -ms-transform: translateX(14rem);
-          transform: translateX(14rem);
+  -webkit-transform: translateX(17rem);
+      -ms-transform: translateX(17rem);
+          transform: translateX(17rem);
 }
 
+.sidebar-item-footer {
+  position:absolute;
+    bottom:0;
+}
 
 /*
  * Posts and pages

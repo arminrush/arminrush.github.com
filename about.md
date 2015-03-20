@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+icon: fa fa-user fa-fw
 ---
 <br>
 

@@ -14,11 +14,12 @@ permalink:        pretty
 
 #predefine variable
 title:            Armin
+description:      '『任何一把剃刀都自有它的哲学』'
 header:           'How Come'
-url:              http://arminrush.github.io
+url:              www.arminalter.com
 
 # paginate
-paginate:      1
+paginate:         3
 
 author:
   name:           'Armin'
