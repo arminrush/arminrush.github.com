@@ -2,6 +2,7 @@
 title: Parallel Capable ClassLoader
 layout: post
 category: Java
+splitor: <!--more-->
 ---
 
 
@@ -17,7 +18,7 @@ JDK 7 对Class Loader 进行了更新，加入了Parallel Capable(并行能力)�
 
 ![ClassLoaderJdk6](/assets/ParallelCapableClassLoader/ClassLoaderJdk6.png)
 
-
+<!--more-->
 ### ClassNotFoundException
 
 在多线程情况下，当大量的ClassNotFoundException发生时，就要小心了。意味着在load处可能会发生不少wait for lock的情况。会拖慢程序处理的吞吐量。应该予以重视。

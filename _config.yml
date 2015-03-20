@@ -18,7 +18,7 @@ header:           'How Come'
 url:              http://arminrush.github.io
 
 # paginate
-paginate:      5
+paginate:      1
 
 author:
   name:           'Armin'
