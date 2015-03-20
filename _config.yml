@@ -17,9 +17,7 @@ author:
   name:           'Armin'
   email:           min4450@outlook.com
 
-kramdown:
-  toc_levels:     1..6
-  
+
 defaults:
   -
     scope:

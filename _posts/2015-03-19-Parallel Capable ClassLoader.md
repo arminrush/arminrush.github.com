@@ -3,7 +3,7 @@ title: Parallel Capable ClassLoadder
 layout: post
 ---
 
-{:toc}
+:with_toc_data
 
 JDK 7 对Class Loader 进行了更新，加入了Parallel Capable(并行能力)的加载机制，默认是启用的。
 
