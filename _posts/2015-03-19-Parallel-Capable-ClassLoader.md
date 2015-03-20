@@ -1,9 +1,9 @@
 ---
-title: Parallel Capable ClassLoadder
+title: Parallel Capable ClassLoader
 layout: post
+category: Java
 ---
 
-:with_toc_data
 
 JDK 7 对Class Loader 进行了更新，加入了Parallel Capable(并行能力)的加载机制，默认是启用的。
 
@@ -15,7 +15,7 @@ JDK 7 对Class Loader 进行了更新，加入了Parallel Capable(并行能力)�
 
 在JDK 6中，ClassLoader的loadClass是同步方法。此时锁的使用粒度太粗了，导致了在多线程环境下加载类时性能比较差，而且易发生死锁问题。
 
-![ClassLoaderJdk6](/public/img/ParallelCapableClassLoader/ClassLoaderJdk6.png)
+![ClassLoaderJdk6](/assets/ParallelCapableClassLoader/ClassLoaderJdk6.png)
 
 
 ### ClassNotFoundException
@@ -52,10 +52,10 @@ public class ClassloadingLockMock {
 ```
 
 通过jvisualvm查看线程运行情况
-![ClassLoaderJdk6Block.png](/public/img/ParallelCapableClassLoader/ClassLoaderJdk6Block.png)
+![ClassLoaderJdk6Block.png](/assets/ParallelCapableClassLoader/ClassLoaderJdk6Block.png)
 
 查看jstack，会发现大量的线程在等待同一个Lock。
-![ClassLoaderLockStack.png](/public/img/ParallelCapableClassLoader/ClassLoaderLockStack.png)
+![ClassLoaderLockStack.png](/assets/ParallelCapableClassLoader/ClassLoaderLockStack.png)
 
 ### 死锁场景
 
@@ -113,12 +113,12 @@ Thread 2:
 
 Parallel Capable 其实是锁的细粒度的使用。
 
-![ClassLoaderJdk7](/public/img/ParallelCapableClassLoader/ClassLoaderJdk7.png)
+![ClassLoaderJdk7](/assets/ParallelCapableClassLoader/ClassLoaderJdk7.png)
 
-![ClassLoaderJdk7Lock](/public/img/ParallelCapableClassLoader/ClassLoaderJdk7Lock.png)
+![ClassLoaderJdk7Lock](/assets/ParallelCapableClassLoader/ClassLoaderJdk7Lock.png)
 
 在JDK 7 再次运行上面的模拟测试程序，查看形成运行情况，发现大量的block不见。
-![ClassLoaderParralMonitor.png](/public/img/ParallelCapableClassLoader/ClassLoaderParallelMonitor.png)
+![ClassLoaderParralMonitor.png](/assets/ParallelCapableClassLoader/ClassLoaderParallelMonitor.png)
 
 
 ## 参考资料：

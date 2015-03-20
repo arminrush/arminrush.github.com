@@ -1,11 +1,18 @@
-# Dependencies
+# Conversion
 markdown:         redcarpet
 highlighter:      pygments
+pygments: true
+
+exclude:
+- README.md
+- CNAME
+- Gemfile
+- Gemfile.lock
 
 # Permalinks
 permalink:        pretty
 
-#envir
+#predefine variable
 title:            Armin
 header:           'How Come'
 url:              http://arminrush.github.io
