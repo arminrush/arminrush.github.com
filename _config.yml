@@ -19,7 +19,7 @@ header:           'How Come'
 url:              www.arminalter.com
 
 # paginate
-paginate:         3
+paginate:         5
 
 author:
   name:           'Armin'

@@ -8,6 +8,8 @@ splitor: <!--more-->
 
 JDK 7 对Class Loader 进行了更新，加入了Parallel Capable(并行能力)的加载机制，默认是启用的。
 
+<!--more-->
+
 ## 什么是Parallel Capable
 
 当在多线程执行环境时，不同的线程load不同的类时，不会阻塞，即支持并发加载。

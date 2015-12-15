@@ -7,8 +7,9 @@ splitor: <!--more-->
 
 在生产环境JRE 运行在server 模式下， 从日志上看大量的NullPointException日志打印时，没有堆栈信息输出。查了一下，JIT编译会对某些异常如果大量的抛出时，会进行优化，删除堆栈信息。
 
+<!--more-->
+
 通过下面的代码可以重现问题
-            int i = 1;
 
 ``` java
 
