@@ -1,5 +1,5 @@
 # Conversion
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      pygments
 pygments: true
 
