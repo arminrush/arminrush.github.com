@@ -1,7 +1,6 @@
 # Conversion
 markdown:         kramdown
-highlighter:      pygments
-pygments: true
+highlighter:      rouge
 
 exclude:
 - README.md
